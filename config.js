@@ -4699,7 +4699,7 @@ function FindProxyForURL(url, host) {
 		 shExpMatch(host, "ad-traffic.*", "*/ad.*", "adasset.*", "adclick.*", "adresult.*", "ads.*", "adserv.*", "adserve.*", "adserver.*", "asrv.*", "adv.*", "advert.*", "advertorial.*", "adverts.*", "adview.*", "adx.*", "adz.*", "banner.*", "banners.*", "viewad.*")
          shExpMatch(host, "*/ad-traffic/*", "*/ad/*", "*/adasset/*", "*/adclick/*", "*/adresult/*", "*/ads/*", "*/adserv/*", "*/adserve/*", "*/adserver/*", "*/adv/*", "*/advert/*", "*/advertorial/*", "*/adverts/*", "*/adview/*", "*/adx/*", "*/adz/*", "*/banner/*", "*/banners/*", "*/viewad/*")
        ) {
-       return "PROXY 127.0.0.1:53";
+       return "PROXY 8.8.8.8:53";
        }
    else {
        return "DIRECT";
